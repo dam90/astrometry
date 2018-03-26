@@ -42,9 +42,24 @@ The command above starts a docker container using the `dm90/astrometry` image an
 
 #### Using docker-compose
 
-The better way is to use docker-compose (see [docker-compose.yml](./docker-compose.yml)).  From the directory containing the `docker-compose.yml` type:
+The better way is to use docker-compose (see [docker-compose.yml](./docker-compose.yml)).  
+
+Using git, clone the repo, and change into the directory:
+
+```
+git clone https://github.com/dam90/astrometry.git nova
+cd nova/
+```
+
+From that directory (which contains the `docker-compose.yml`) type:
 
 `docker-compose up -d`
+
+Note: by default docker-compose.yml looks for a docker volume named "astrometry_index".  If no such volume exists, comment out the line or create an empty one using:
+
+`docker volume create astrometry_index`
+
+See [index README](./index) for more details.
 
 ### Test
 
