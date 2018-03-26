@@ -10,7 +10,15 @@ My solution is a Docker image ([dm90/astrometry](https://hub.docker.com/r/dm90/a
 * Has astrometry.net python libraries compiled added to the Python path
 * Has a preconfigured NOVA server (basic settings) that launches witha single command
 
-## Quickstart
+## Quick and Dirty
+
+`docker run --name nova --restart unless-stopped -v /my/index/data:/usr/local/astrometry/data -p 8000:8000 dm90/astrometry`
+
+Visit http://localhost:8000 in your browser.  If it's up and running, start downloading index files:
+
+`docker exec nova download_index_files.sh`
+
+## Details
 
 If you are familiar with Docker, usage is pretty straightforward both for starting the NOVA server or for using command-line utilities within the astrometry container.
 
@@ -72,6 +80,3 @@ Once the Docker container is running go to http://localhost:8000 (or replace "lo
 ## Index files
 
 The docker image comes with only one index file for testing, so you'll probably want to add your own. See the [index README](./index) for a description of how to do this.
-
-------------------------
-*README is in progress!*

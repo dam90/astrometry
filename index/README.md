@@ -58,8 +58,3 @@ I've consolidated the above process into as script called [create_index_volume.s
 * starts a docker container with the docker volume mounted
 * executes [download_index_files.sh](./download_index_files.sh) inside the container
 * removes the container, leaving a populated astrometry_index docker volume
-
-## TODO
-
-* Provide a shell script for creating index volumes
-* Write a container script for updating index volumes
