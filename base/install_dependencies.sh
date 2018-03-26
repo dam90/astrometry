@@ -13,6 +13,7 @@ yum install -y git \
                gcc \
                make \
                python-pip \
+               wget \
                nano
 
 # update pip...
