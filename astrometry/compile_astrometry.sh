@@ -24,9 +24,9 @@ cd ..
 
 # compile/install:
 make config > /install/config_results
-make -j
-make -j extra
-make -j py
+make
+make extra
+make py
 make install
 
 

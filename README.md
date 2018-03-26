@@ -12,11 +12,9 @@ My solution is a Docker image ([dm90/astrometry](https://hub.docker.com/r/dm90/a
 
 ## Quick and Dirty
 
-`docker run --name nova --restart unless-stopped -v /my/index/data:/usr/local/astrometry/data -p 8000:8000 -d dm90/astrometry`
+`docker run -p 8000:8000 dm90/astrometry`
 
-Visit http://localhost:8000 in your browser.  If it's up and running, start downloading index files:
-
-`docker exec nova download_index_files.sh`
+Visit http://localhost:8000 in your browser.
 
 ## Details
 

@@ -45,7 +45,7 @@ curl -L  $CFITS_URL > cfitsio.tar.gz
 tar zxvf cfitsio*.tar.gz
 cd cfitsio
 ./configure --prefix=/usr
-make -j
+make
 make install
 ln -s /usr/lib/pkgconfig/cfitsio.pc /usr/lib64/pkgconfig/cfitsio.pc
 cd ..
