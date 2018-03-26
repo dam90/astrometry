@@ -1,0 +1,15 @@
+
+version: '3'
+services:
+  nova:
+    image: dm90/astrometry
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    ports:
+      - 8000:8000
+    volumes:
+      # - astrometry_index:/usr/local/astrometry/data
+      - /Users/Dave/Desktop/astrometry:/usr/local/astrometry/data
+volumes:
+  astrometry_index:
