@@ -16,4 +16,3 @@ services:
 volumes:
   astrometry_index:
     external: true
-      name: astrometry_index
