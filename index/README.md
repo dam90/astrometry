@@ -29,7 +29,7 @@ If this is more of a "production" thing you may want to create a docker volume t
 
 4. Remove our helper container:
 
-  `docker rm helper`
+  `docker rm index_helper`
 
 ### Using the index volume
 
