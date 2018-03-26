@@ -8,9 +8,12 @@ services:
     ports:
       - 8000:8000
     volumes:
+      # Use one of the two mounting options to add index files:
       # use this for a docker volume that contains index fiels (preferred):
-      # - astrometry_index:/usr/local/astrometry/data
+      - astrometry_index:/usr/local/astrometry/data
       # alternatively, use this to mount the index files from a specific directory:
-      - /Users/Dave/Desktop/astrometry:/usr/local/astrometry/data
+      # - /Users/Dave/Desktop/astrometry:/usr/local/astrometry/data
 volumes:
   astrometry_index:
+    external: true
+      name: astrometry_index

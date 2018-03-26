@@ -48,8 +48,7 @@ The better way is to use docker-compose (see [docker-compose.yml](./docker-compo
 
 ## Index files
 
-You need to supply the docker conainer with index files.  See the [index](./index) folder for a description of how to do this.
-
+You need to supply the docker conainer with index files.  See the [index](./index) folder in this repo for a description of how to do this.
 
 ------------------------
 *README is in progress!*
