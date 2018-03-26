@@ -50,7 +50,7 @@ The better way is to use docker-compose (see [docker-compose.yml](./docker-compo
 
 Once the Docker container is running go to http://localhost:8000 (or replace "localhost" with your hostname or IP) and you should get the nova homepage:
 
-![alt text][./media/nova_homepage.png]
+![screenshot of running nova container](./media/nova_homepage.png)
 
 ## Index files
 
