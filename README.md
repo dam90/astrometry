@@ -1,4 +1,4 @@
-Out-of-the-box Astrometry.net for local plate solving using Docker.
+Astrometry.net ready out-of-the-box for local plate solving using Docker.
 
 ## Overview
 
