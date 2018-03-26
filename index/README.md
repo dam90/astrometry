@@ -17,19 +17,19 @@ If this is more of a "production" thing you may want to create a docker volume t
 
 1. Create a Docker volume.  We'll call it *astrometry_index*:
 
-  `docker volume create astrometry_index`
+    `docker volume create astrometry_index`
 
 2. Create a helper container (called *index_helper*) that will dump your index files into the docker volume:
 
-  `docker create -v astrometry_index:/data --name index_helper dm90/astrometry`
+    `docker create -v astrometry_index:/data --name index_helper dm90/astrometry`
 
 3. Use `docker cp` to add your index files to the docker volume, which is mounted to the helper container.  *Notice the trailing "/." on the source directory: this will copy all the files, but not the parent directory into the container directory*
 
-  `docker cp /directory/with/index/files/. helper:/data`
+    `docker cp /directory/with/index/files/. helper:/data`
 
 4. Remove our helper container, leaving a docker volume with your index files inside:
 
-  `docker rm index_helper`
+    `docker rm index_helper`
 
 ### Using the index volume
 
