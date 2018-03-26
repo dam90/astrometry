@@ -7,7 +7,7 @@ If you have a directory containing all of your index `*.fits` files, you can sim
 
 `-v /directory/with/index/files:/usr/local/astrometry/data`
 
-This would mount all of the files in `/directory/with/index/files` on your computer to `/usr/local/astrometry/data` inside the container.  This will work fine and won't be much trouble if the location of your index files doesn't change.  This also allows you do easily add index files on the fly, since anything you drop into your index folder is immediately accessibly by the astrometry container.
+This would mount all of the files in `/directory/with/index/files` on your computer to `/usr/local/astrometry/data` inside the container.  This will work fine and won't be much trouble if the location of your index files doesn't change.  This also allows you do easily add index files on the fly, since anything you drop into your index folder is immediately accessibly by the astrometry container.Â
 
 ## Mount the index files from a Docker volume
 
