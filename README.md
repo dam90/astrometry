@@ -42,7 +42,7 @@ The command above starts a docker container using the `dm90/astrometry` image an
 
 #### Using docker-compose
 
-The better way is to use docker-compose (or some other method for orchestration).  This involves just:
+The better way is to use docker-compose (see [docker-compose.yml](./docker-compose.yml).  This involves just:
 
 `docker-compose up -d`
 
