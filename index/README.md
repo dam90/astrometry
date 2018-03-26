@@ -25,7 +25,7 @@ If this is more of a "production" thing you may want to create a docker volume t
 
 3. Use `docker cp` to add your index files to the docker volume, which is mounted to the helper container.  *Notice the trailing "/." on the source directory: this will copy all the files, but not the parent directory into the container directory*
 
-    `docker cp /directory/with/index/files/. helper:/data`
+    `docker cp /directory/with/index/files/. index_helper:/data`
 
 4. Remove our helper container, leaving a docker volume with your index files inside:
 
