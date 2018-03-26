@@ -1,5 +1,16 @@
+
 # Adding index files to the Docker container
 The image only contains one index file used to verify that the stack actually works.  The astrometry container will boot perfectly fine without any extra index files, however it probably won't solve most images.  Since the container uses the default astrometry.net configuration, it looks for index files residing in the folder `/usr/local/astrometery/data` inside the docker container.  There are a couple of different ways to do this, I'll suggest two.
+
+## Download the Index files
+
+If you don't have some index files download them.  I've been using the files from:
+
+* http://broiler.astrometry.net/~dstn/4200/
+
+* http://broiler.astrometry.net/~dstn/4100/
+
+To avoid the "clicky clicky" use something like  [download_index_files.sh](./download_index_files.sh) to download them.  [download_index_files.sh](./download_index_files.sh) is included in the docker image  and is included the system path so it can be run inside the container.
 
 ## Mount the index files from a directory on your computer
 
@@ -38,6 +49,15 @@ Once your index volume exists, you mount it as if it were a directory.  So now o
 `-v astrometry_index:/usr/local/astrometry/data`
 
 This can be nice since you don't need to remember the location of the index files, and allows for easy configuration across multiple servers, provided they all create docker volumes with the same name that contain the index files.
+
+### Helper scripts
+
+I've consolidated the above process into as script called [create_index_volume.sh](./create_index_volume.sh).  The script does the follwing:
+
+* creates the docker volume
+* starts a docker container with the docker volume mounted
+* executes [download_index_files.sh](./download_index_files.sh) inside the container
+* removes the container, leaving a populated astrometry_index docker volume
 
 ## TODO
 
