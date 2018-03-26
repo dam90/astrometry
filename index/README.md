@@ -11,7 +11,9 @@ This would mount all of the files in `/directory/with/index/files` on your compu
 
 ## Mount the index files from a Docker volume
 
-If this is more of a "production" thing you may want to create a docker volume to store your index data.  See Docker docs for understanding Docker volumes.  This requires a few steps:
+If this is more of a "production" thing you may want to create a docker volume to store your index data.  See Docker docs for understanding Docker volumes.
+
+### Creating the index volume
 
 1. Create a Docker volume.  We'll call it *astrometry_index*:
 
@@ -29,7 +31,15 @@ If this is more of a "production" thing you may want to create a docker volume t
 
   `docker rm helper`
 
+### Using the index volume
+
+Once your index volume exists, you mount it as if it were a directory.  So now our docker run flag looks like this:
+
+`-v astrometry_index:/usr/local/astrometry/data`
+
+This can be nice since you don't need to remember the location of the index files, and allows for easy configuration across multiple servers, provided they all create docker volumes with the same name that contain the index files.
+
 ## TODO
 
-* Provide a shell script for create index volumes
+* Provide a shell script for creating index volumes
 * Write a container script for updating index volumes
