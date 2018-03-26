@@ -23,9 +23,9 @@ If this is more of a "production" thing you may want to create a docker volume t
 
   `docker create -v astrometry_index:/data --name index_helper dm90/astrometry`
 
-3. Use `docker cp` to add your index files to the docker volume, which is mounted to the helper container.  *Notice the lack of a trailing trailing slash on the source directory: this will copy files, but not the parent directory into the container directory*
+3. Use `docker cp` to add your index files to the docker volume, which is mounted to the helper container.  *Notice the trailing "/." on the source directory: this will copy all the files, but not the parent directory into the container directory*
 
-  `docker cp /directory/with/index/files helper:/data`
+  `docker cp /directory/with/index/files/. helper:/data`
 
 4. Remove our helper container:
 
