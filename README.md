@@ -61,7 +61,7 @@ By default [docker-compose.yml](./docker-compose.yml) looks for a docker volume 
 
 `docker volume create astrometry_index`
 
-See [index README](./index) for more details.
+See the [index README](./index) for more details.
 
 ### Test
 
@@ -71,7 +71,7 @@ Once the Docker container is running go to http://localhost:8000 (or replace "lo
 
 ## Index files
 
-The docker images comes with only one index file for testing, so you'll probably want to add your own. See the [index](./index) folder in this repo for a description of how to do this.
+The docker image comes with only one index file for testing, so you'll probably want to add your own. See the [index README](./index) for a description of how to do this.
 
 ------------------------
 *README is in progress!*
