@@ -27,7 +27,7 @@ If this is more of a "production" thing you may want to create a docker volume t
 
   `docker cp /directory/with/index/files/. helper:/data`
 
-4. Remove our helper container:
+4. Remove our helper container, leaving a docker volume with your index files inside:
 
   `docker rm index_helper`
 
