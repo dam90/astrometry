@@ -33,6 +33,9 @@ COPY ./nova/start_nova.sh /astrometry.net/net/
 COPY ./nova/solve_script.sh /astrometry.net/net/
 COPY ./docker-entrypoint.sh /
 
+# add any example index files:
+COPY ./index/*.fits /usr/local/astrometry/data
+
 # specify entrypoint
 WORKDIR /
 ENTRYPOINT ["./docker-entrypoint.sh"]

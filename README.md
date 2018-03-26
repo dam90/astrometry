@@ -54,7 +54,7 @@ Once the Docker container is running go to http://localhost:8000 (or replace "lo
 
 ## Index files
 
-You need to supply the docker container with index files.  See the [index](./index) folder in this repo for a description of how to do this.
+The docker images comes with only one index file for testing, so you'll probably want to add your own. See the [index](./index) folder in this repo for a description of how to do this.
 
 ------------------------
 *README is in progress!*

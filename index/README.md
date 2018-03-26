@@ -1,5 +1,5 @@
 # Adding index files to the Docker container
-The astrometry container will boot perfectly fine without any index files included, however it just won't be able to solve any images.  Since the container uses the default astrometry.net configuration, it looks for index files residing in the folder `/usr/local/astrometery/data` inside the docker container.  There are a couple of different ways to do this, I'll suggest two.
+The image only contains one index file used to verify that the stack actually works.  The astrometry container will boot perfectly fine without any extra index files, however it probably won't solve most images.  Since the container uses the default astrometry.net configuration, it looks for index files residing in the folder `/usr/local/astrometery/data` inside the docker container.  There are a couple of different ways to do this, I'll suggest two.
 
 ## Mount the index files from a directory on your computer
 
