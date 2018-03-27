@@ -18,8 +18,6 @@ If you're a docker fiend, here you go:
 
 `docker run -p 8000:8000 dm90/astrometry`
 
-Visit http://localhost:8000 in your browser.
-
 ## Details
 
 If you are familiar with Docker, usage is pretty straightforward.  If you're not familiar with Docker, do some research.  I'll be a bit verbose below just in case.
