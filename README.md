@@ -75,6 +75,10 @@ Once the Docker container is running go to http://localhost:8000 (or replace "lo
 
 ![screenshot of running nova container](./media/nova_homepage.png)
 
+#### NOVA API
+
+The web API also works.  Using api key `XXXXXXXX` hit this endpoint  http://localhost:8000/api. See [ADN docs](http://astrometry.net/doc/net/api.html) for details on the API.
+
 ## Index files
 
 The docker image comes with only one index file for testing, so you'll probably want to add your own. See the [index README](./index) for a description of how to do this.

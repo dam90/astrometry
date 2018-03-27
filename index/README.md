@@ -10,7 +10,7 @@ If you don't have some index files download them.  I've been using the files fro
 
 * http://broiler.astrometry.net/~dstn/4100/
 
-To avoid the "clicky clicky" use something like  [download_index_files.sh](./download_index_files.sh) to download them.  [download_index_files.sh](./download_index_files.sh) is included in the docker image  and is included the system path so it can be run inside the container.
+To avoid the "clicky clicky" use something like  [download_index_files.sh](./download_index_files.sh) to download them.  [download_index_files.sh](./download_index_files.sh) is included in the docker image  and is included the system path so it can be run inside the container. When I download the 4100 and 4200 index files it ends up taking up about 31 Gb of disk.
 
 ## Mount the index files from a directory on your computer
 
