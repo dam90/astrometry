@@ -61,7 +61,7 @@ urlpatterns = staticfiles_urlpatterns() + urlpatterns
 
 ### use gunicorn HTTP server
 
-Make sure you have gunicron installed (`pip install gunicorn`).  From the nova django directory:
+Make sure you have gunicron installed (`pip install gunicorn`).  From the Nova django directory (`/usr/local/astrometry/net/` in my case):
 
 `gunicorn net.wsgi:application -b 0.0.0.0:8000`
 

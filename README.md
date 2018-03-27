@@ -8,7 +8,7 @@ My solution is a Docker image ([dm90/astrometry](https://hub.docker.com/r/dm90/a
 
 * Has astrometry.net compiled and ready for use at the command line
 * Has astrometry.net python libraries compiled added to the Python path
-* Has a preconfigured NOVA server (basic settings) that launches with a single command
+* Has a preconfigured Nova server (basic settings) that launches with a single command
 
 I tried to provide some documentation of what's happening here.  Check out [base](./base), [astrometry](./astrometry), and [nova](./nova) for docs on each aspect of the build.
 
@@ -30,7 +30,7 @@ Assuming you have Docker installed on your system, run:
 
 This could take a bit to download (I haven't attempted to shrink the image yet)
 
-### Running the NOVA Server
+### Running the Nova Server
 
 #### Using docker run
 
@@ -77,9 +77,9 @@ Once the Docker container is running go to http://localhost:8000 (or replace "lo
 
 ![screenshot of running nova container](./media/nova_homepage.png)
 
-#### NOVA API
+#### Nova API
 
-The web API also works.  Using api key `XXXXXXXX` hit this endpoint  http://localhost:8000/api. See [ADN docs](http://astrometry.net/doc/net/api.html) for details on the API.
+The web API also works.  Using api key `XXXXXXXX` (or just an empty string: `""` hit this endpoint  http://localhost:8000/api. See [ADN docs](http://astrometry.net/doc/net/api.html) for details on the API.
 
 ## The Docker image doesn't work!
 
