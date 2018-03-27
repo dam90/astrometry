@@ -1,0 +1,22 @@
+[
+{
+    "model"     :   "auth.user",
+    "pk"        :   1111,
+    "fields"    :   {
+        "first_name"    :   "docker",
+        "last_name"     :   "",
+        "username"      :   "apitester",
+        "password"      :   "0"
+    }
+},
+{
+    "model"     :   "net.userprofile",
+    "pk"        :   1111,
+    "fields"    :   {
+        "display_name"      :   "docker",
+        "user"              :   1111,
+        "apikey"            :   null,
+        "default_license"   :   1
+    }
+}
+]

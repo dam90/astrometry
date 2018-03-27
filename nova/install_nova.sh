@@ -13,9 +13,10 @@ python manage.py makemigrations
 python manage.py migrate
 python manage.py loaddata fixtures/*
 # change allowed hosts in common settings file:
-ORIGINAL_LINE_START="ALLOWED_HOSTS = \["
-REPLACE_WITH="ALLOWED_HOSTS = \[\'\*\',"
-sed -i "s/$ORIGINAL_LINE_START/$REPLACE_WITH/g" settings_common.py
+NEW_LINE="# Add wildcard to ALLOWED_HOSTS:"
+echo $NEW_LINE >> ./settings_common.py
+NEW_LINE="ALLOWED_HOSTS = ['*'] + ALLOWED_HOSTS"
+echo $NEW_LINE >> ./settings_common.py
 # allow serving static files through wsgi by adding the the following lines to urls.py:
 NEW_LINE="# Allow static file serving via wsgi app in Docker container:"
 echo $NEW_LINE >> ./urls.py
