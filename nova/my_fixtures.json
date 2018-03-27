@@ -1,0 +1,22 @@
+[
+  {
+    "model"     :   "auth.user",
+    "pk"        :   2000,
+    "fields"    :   {
+      "first_name"    :   "docker",
+      "last_name"     :   "container",
+      "username"      :   "docker",
+      "password"      :   ""
+    }
+  },
+  {
+    "model"     :   "net.userprofile",
+    "pk"        :   2000,
+    "fields"    :   {
+      "display_name"      :   "docker",
+      "user"              :   2000,
+      "apikey"            :   "",
+      "default_license"   :   1
+    }
+  }
+]

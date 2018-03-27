@@ -20,6 +20,7 @@ ENV PYTHONPATH="/astrometry.net"
 #              NOVA INSTALLATION
 # ----------------------------------------------
 COPY ./nova /install/nova
+COPY ./nova/my_fixtures.json /astrometry.net/net/fixtures/
 WORKDIR /install/nova
 RUN ["./install_nova.sh"]
 

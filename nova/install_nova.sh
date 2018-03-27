@@ -2,8 +2,6 @@
 
 # add secrets:
 cp -r secrets/ /astrometry.net/net/
-# add my fixtures:
-cp my_fixtures.json /astrometry.net/net/fixtures/
 # install astrometry python package:
 cd /astrometry.net
 # go into django dir:
