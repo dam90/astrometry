@@ -57,7 +57,6 @@ I serve the application using [gunicorn](http://gunicorn.org/) since it's simple
 ```
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = staticfiles_urlpatterns() + urlpatterns
-
 ```
 
 ### use gunicorn HTTP server
