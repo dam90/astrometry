@@ -18,7 +18,7 @@ Visit http://localhost:8000 in your browser.
 
 ## Details
 
-If you are familiar with Docker, usage is pretty straightforward both for starting the NOVA server or for using command-line utilities within the astrometry container.
+If you are familiar with Docker, usage is pretty straightforward.  If you're not familiar with Docker, do some research.  I'll be a bit verbose below just in case.
 
 ### Download
 
