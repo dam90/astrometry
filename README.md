@@ -8,7 +8,7 @@ My solution is a Docker image ([dm90/astrometry](https://hub.docker.com/r/dm90/a
 
 * Has astrometry.net compiled and ready for use at the command line
 * Has astrometry.net python libraries compiled added to the Python path
-* Has a preconfigured NOVA server (basic settings) that launches witha single command
+* Has a preconfigured NOVA server (basic settings) that launches with a single command
 
 ## Quick and Dirty
 
