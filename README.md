@@ -12,6 +12,8 @@ My solution is a Docker image ([dm90/astrometry](https://hub.docker.com/r/dm90/a
 
 ## Quick and Dirty
 
+If you're a docker fiend, here you go:
+
 `docker run -p 8000:8000 dm90/astrometry`
 
 Visit http://localhost:8000 in your browser.
