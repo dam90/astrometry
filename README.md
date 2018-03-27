@@ -2,7 +2,7 @@ Astrometry.net ready out-of-the-box for local plate solving using Docker.
 
 ## Overview
 
-I wanted to be able to spin up a local plate solver (including web API) and with (almost) zero configuration.  In my case, I use [astrometry.net](http://astrometry.net) (ADN) to assist building mount models for my telescope, so I want to be able to stand up a new ADN server on a laptop, or perhaps a raspberry pi to give me ADN's capability without access to the interwebs.  This is similar to [ansvr](https://adgsoftware.com/ansvr/) on Windows, but will work on any operating system that can run Docker.
+I wanted to be able to spin up a local plate solver (including web API) and with (almost) zero configuration.  In my case, I use [astrometry.net](http://astrometry.net) (ADN) to assist building mount models for my telescope.  It would be nice to have an ADN server on a laptop, or perhaps a raspberry pi to give me ADN's capability even when I lack access to the interwebs.  This capability is similar to [ansvr](https://adgsoftware.com/ansvr/) on Windows, but will work on any operating system that can run Docker. (I really do not enjoy windows...)
 
 My solution is a Docker image ([dm90/astrometry](https://hub.docker.com/r/dm90/astrometry/)) which:
 
