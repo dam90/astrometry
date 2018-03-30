@@ -3,9 +3,9 @@ FROM centos:latest
 # ----------------------------------------------
 #               BASE INSTALLATION
 # ----------------------------------------------
-COPY ./base/install_dependencies.sh /install/
-WORKDIR /
-RUN ["/install/install_dependencies.sh"]
+COPY ./base /install/base
+WORKDIR /install/base
+RUN ["./install_dependencies.sh"]
 
 # ----------------------------------------------
 #            ASTROMETRY INSTALLATION

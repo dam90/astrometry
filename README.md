@@ -79,7 +79,7 @@ Once the Docker container is running go to http://localhost:8000 (or replace "lo
 
 #### Nova API
 
-The web API also works.  Using api key `XXXXXXXX` (or just an empty string: `""` hit this endpoint  http://localhost:8000/api. See [ADN docs](http://astrometry.net/doc/net/api.html) for details on the API.
+The web API also works.  Using api key `XXXXXXXX` (or just an empty string: `""`) hit this endpoint  http://localhost:8000/api. See [ADN docs](http://astrometry.net/doc/net/api.html) for details on the API.
 
 ## The Docker image doesn't work!
 
