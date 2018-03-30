@@ -5,6 +5,8 @@ services:
     build:
       context: ./
       dockerfile: ./Dockerfile
+      args:
+        - ARCH=intel
     ports:
       - 8000:8000
     volumes:
