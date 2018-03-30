@@ -20,7 +20,7 @@ If you're a docker fiend, here you go:
 
 ## Details
 
-If you are familiar with Docker, usage is pretty straightforward.  If you're not familiar with Docker, do some research.  I'll be a bit verbose below just in case.  If you're running on a raspberry pi (or other ARM device) see [below](#Running on ARM Chipsets \(Raspberry Pi\))
+If you are familiar with Docker, usage is pretty straightforward.  If you're not familiar with Docker, do some research.  I'll be a bit verbose below just in case.  If you're running on a raspberry pi (or other ARM device) see [below](#Running-on-ARM Chipsets-\(Raspberry-Pi\))
 
 ### Download
 
