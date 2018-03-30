@@ -20,7 +20,7 @@ If you're a docker fiend, here you go:
 
 ## Details
 
-If you are familiar with Docker, usage is pretty straightforward.  If you're not familiar with Docker, do some research.  I'll be a bit verbose below just in case.
+If you are familiar with Docker, usage is pretty straightforward.  If you're not familiar with Docker, do some research.  I'll be a bit verbose below just in case.  If you're running on a raspberry pi (or other ARM device) see [below](#Running on ARM Chipseets (Raspberry Pi))
 
 ### Download
 
@@ -103,3 +103,16 @@ I'd be interested to know if you have to do this, and what the outcome is.
 ## Index files
 
 The docker image comes with only one index file for testing, so you'll probably want to add your own. See the [index README](./index) for a description of how to do this.
+
+# Running on ARM Chipseets (Raspberry Pi)
+My first go at this was on an Intel-based CentOS installation.  Once I got that working I made a separate set of install scripts for a Raspbian Docker image.  I've modified the docker build process so that when installing dependencies and compiling from source it first checks the chipset.
+
+A raspberry pi compatible image is available using the `arm` tag:
+
+`docker pull dm90/astrometry:arm`
+
+If using docker-compose, set the `ARCH` environment variable before use:
+
+`export ARCH=ARM`
+
+If the `$ARCH` environment variable starts with "arm" (case-insensitive), it will use the `arm` docker image.
