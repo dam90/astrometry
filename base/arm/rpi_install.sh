@@ -1,4 +1,4 @@
-#! /bin/#!/usr/bin/env bash
+#! /bin/bash
 
 # update repos:
 apt-get update
