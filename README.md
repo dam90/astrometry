@@ -105,7 +105,9 @@ I'd be interested to know if you have to do this, and what the outcome is.
 The docker image comes with only one index file for testing, so you'll probably want to add your own. See the [index README](./index) for a description of how to do this.
 
 # <a name="arm_doc">Running on ARM Chipsets (Raspberry Pi)
-My first go at this was on an Intel-based CentOS installation.  Once I got that working I made a separate set of install scripts for a Raspbian Docker image.  I've modified the docker build process so that when installing dependencies and compiling from source it first checks the chipset.
+My first go at this was on an Intel-based CentOS image.  Once I got that working I made a separate set of install scripts for a Raspbian Docker image.  I've modified the docker build process so that when installing dependencies and compiling from source it first checks the chipset.
+
+Assuming you have [docker and docker-compose up and running on your rpi](https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/) usage is straightforward.
 
 A raspberry pi compatible image is available using the `arm` tag:
 
