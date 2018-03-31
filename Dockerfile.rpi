@@ -1,4 +1,6 @@
-FROM resin/rpi-raspbian
+FROM codingwell/rpi-raspbian-qemu
+
+RUN [ "cross-build-start" ]
 
 # ----------------------------------------------
 #               BASE INSTALLATION
@@ -41,6 +43,8 @@ COPY ./docker-entrypoint.sh /
 COPY ./index/*.fits /usr/local/astrometry/data/
 # add utility script for downloading index files to astrometry/bin, which is part of the path:
 COPY ./index/download_index_files.sh /usr/local/astrometry/bin/
+
+RUN [ "cross-build-end" ]
 
 # ----------------------------------------------
 #                  ENTRYPOINT

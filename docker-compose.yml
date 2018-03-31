@@ -1,12 +1,10 @@
 version: '3'
 services:
   nova:
-    image: dm90/astrometry
+    image: "dm90/astrometry:{NOVA_TAG}"
     build:
       context: ./
       dockerfile: ./Dockerfile
-      args:
-        - ARCH=intel
     ports:
       - 8000:8000
     volumes:

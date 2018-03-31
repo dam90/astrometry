@@ -5,14 +5,14 @@ apt-get update
 
 # install utilities
 apt-get install -y git \
-                   make gcc-4.4 \
+                   make gcc \
                    python-pip \
                    wget \
                    nano
 
 # link gcc version:
-ln /usr/bin/gcc-4.4 /usr/bin/gcc
-export CC=/usr/bin/gcc-4.4
+# ln /usr/bin/gcc-4.4 /usr/bin/gcc
+# export CC=/usr/bin/gcc-4.4
 
 # upgrade pip:
 pip install --upgrade pip
@@ -46,7 +46,6 @@ echo yes | pip install setuptools\
                        Pillow \
                        simplejson \
                        social-auth-core \
-                       matplotlib \
                        social-auth-app-django \
                        pyfits \
                        gunicorn
