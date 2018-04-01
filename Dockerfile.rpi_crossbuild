@@ -16,7 +16,7 @@ COPY ./astrometry /install/astrometry
 WORKDIR /
 RUN ["/install/astrometry/compile_astrometry.sh"]
 ENV PATH="/usr/local/astrometry/bin:${PATH}"
-ENV PYTHONPATH="/astrometry.net"
+ENV PYTHONPATH="/astrometry.net:${PYTHONPATH}"
 
 # ----------------------------------------------
 #              NOVA INSTALLATION

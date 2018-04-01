@@ -66,7 +66,8 @@ echo yes | pip install setuptools\
                        "django==1.7" \
                        python-openid \
                        django-openid-auth \
-                       South Pillow \
+                       South \
+                       Pillow \
                        simplejson \
                        social-auth-core \
                        matplotlib \

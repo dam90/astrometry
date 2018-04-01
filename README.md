@@ -113,7 +113,7 @@ A raspberry pi compatible image is available using the `arm` tag:
 
 `docker pull dm90/astrometry:arm`
 
-If using docker-compose, set the `ARCH` environment variable before use:
+If using docker-compose, set the `NOVA_TAG` environment variable to `arm` before use:
 
 ```
 export NOVA_TAG=arm

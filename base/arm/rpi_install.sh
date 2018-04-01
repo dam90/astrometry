@@ -5,7 +5,7 @@ apt-get update
 
 # install utilities
 apt-get install -y git \
-                   make gcc \
+                   build-essential gcc-4.4\
                    python-pip \
                    wget \
                    nano
@@ -29,23 +29,23 @@ apt-get install bzip2 libbz2-dev \
                 libnetpbm10-dev libnetpbm10 netpbm \
                 zlib1g-dev \
                 wcslib-dev wcslib-tools \
-                python python-numpy \
-                swig3.0
+                python-dev python-pil python-numpy python-scipy python-matplotlib python-tk python-astropy \
+                swig
 
 # install cfitsio
 apt-get install libcfitsio-dev libcfitsio-bin
 
-# install NOVA python dependencies:
+# install NOVA python dependencies:\
+# Moved astropy up to the apt-get section
 echo yes | pip install setuptools\
                        wheel \
-                       fitsio \
                        "django==1.7" \
                        python-openid \
                        django-openid-auth \
                        South \
-                       Pillow \
+                       fitsio \
+                       astropy \
                        simplejson \
                        social-auth-core \
                        social-auth-app-django \
-                       pyfits \
                        gunicorn
