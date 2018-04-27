@@ -13,6 +13,7 @@ services:
       - astrometry_index:/usr/local/astrometry/data
       # alternatively, use this to mount the index files from a specific directory:
       # - /Users/Dave/Desktop/astrometry:/usr/local/astrometry/data
+    restart: unless-stopped
 volumes:
   astrometry_index:
     external: true
