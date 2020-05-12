@@ -41,5 +41,5 @@ social-auth-core==1.7.0
 South==1.0.2
 subprocess32==3.2.7
 urlgrabber==3.10
-urllib3==1.22
+urllib3==1.24.2
 yum-metadata-parser==1.1.4
