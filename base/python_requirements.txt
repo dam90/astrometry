@@ -20,7 +20,7 @@ numpy==1.14.2
 oauthlib==2.0.7
 Pillow==6.2.0
 pluggy==0.6.0
-py==1.5.3
+py==1.10.0
 pycurl==7.19.0
 pygobject==3.22.0
 pygpgme==0.3
