@@ -24,7 +24,7 @@ py==1.5.3
 pycurl==7.19.0
 pygobject==3.22.0
 pygpgme==0.3
-PyJWT==1.6.1
+PyJWT==2.4.0
 pyliblzma==0.5.3
 pyparsing==2.2.0
 pytest==3.5.0
