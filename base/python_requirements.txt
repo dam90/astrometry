@@ -2,7 +2,7 @@ astropy==2.0.5
 attrs==17.4.0
 backports.functools-lru-cache==1.5
 backports.ssl-match-hostname==3.4.0.2
-certifi==2018.1.18
+certifi==2022.12.7
 chardet==3.0.4
 cycler==0.10.0
 Django==1.11.28
